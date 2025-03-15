@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import useFetch from "./hooks/useFetch";
 function Details(){
     const {id}=useParams();
-    const {data,loading,err}=useFetch(`http://localhost:5000/course/preview/${id}`)
+    const {data,loading,err}=useFetch(`/course/preview/${id}`)
     return (
         <>
         {
