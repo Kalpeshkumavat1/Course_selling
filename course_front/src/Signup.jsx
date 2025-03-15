@@ -35,7 +35,7 @@ function Signup(){
         let response={};
         if(!emailerr){
             try{
-                response=await axios.post("http://localhost:5000/user/signup",data,{
+                response=await axios.post("/user/signup",data,{
                     headers:{
                         "Content-Type":"application/json",
                     },
