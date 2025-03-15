@@ -55,6 +55,44 @@
     transform: scale(0.98);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+.hamburger{
+    display: none;
+}
+@media screen and (max-width:450px) {
+    body{
+        background-color: #060c1a;
+    }
+    .nav{
+        min-width:450px;
+    }
+    #navbutton{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+        color: aliceblue;
+    }
+    #login{
+        margin: 0;
+        width: 150px;
+        height: 40px;
+    }
+    #navbutton{
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+        display: none;
+    }
+
+    #navbutton.show {
+        display: flex;
+    }
+}
 .home{
     position: relative;
     background-color: #060c1a;
@@ -87,6 +125,58 @@
     width:1200px;
     text-align: center;
     color: #898888;
+}
+@media screen and (max-width:450px) {
+    .home img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:350px !important;
+        height: 250px !important;
+        overflow: hidden !important;
+    }
+    .home p{
+        max-width: 400px;
+        padding: 35px 0px ;
+    }
+    .dots {
+        display: none;
+    }
+    .login{
+        /* background-color: #003d82 !important; */
+        max-height: 60vh !important;
+    }
+    .mainform {
+        background-color: #003d82 !important;
+        width: 350px !important;
+        height: 450px !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .form{
+        padding: 0 !important;
+        margin: 0 !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .form label{
+        padding: 0 !important;
+        padding-right: 20px !important;
+    }
+    .form input{
+        margin: 0 !important;
+        margin: 10px 0px !important;
+        width: 300px !important;
+    }
+    .form{
+        gap: 10px;
+    }
+    .form button{
+        margin: 5px;
+    }
 }
 .courses{
     width: 100%;
@@ -157,6 +247,28 @@
 .main2button:hover{
     transform: scale(1.05);
 }
+@media screen and (max-width:450px) {
+    .courses{
+        padding-bottom: 1300px;
+        background-color: #060c1a;
+    }
+    .courses h1{
+        padding: 10px 0px;
+    }
+    .coursemainbox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+}
+@media (max-width: 450px) {
+    .main3{
+        display: none;
+    }
+}
+
 .dots button {
     width:20px;
     height: 20px;
@@ -245,6 +357,11 @@
 }
 .inactive{
     display: none;
+}
+@media screen and(max-width:450px) {
+    .question h3 {
+        padding: 80px !important;
+    }
 }
 .login{
     width: 100%;
@@ -444,6 +561,52 @@
     transform: scale(1.05);
     background: linear-gradient(135deg, #6A0DAD, #FF69B4);
 }
+@media screen and (max-width:450px) {
+    .course_row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .course{
+        width: 380px;
+        height: 520px;
+    }
+    .course_details-top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .course_details-top img{
+        width: 350px;
+        height: 350px;
+    }
+    .course_details-top h1 p{
+        padding-left: 20px;
+        width: 400px;
+    }
+    .course_details-top button{
+        padding-left: 20px;
+        width: 350px;
+    }
+    .course_details-topics{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 10px;
+    }
+    .course_details-syllabus{
+        margin: 0;
+        padding: 0.5px;
+    }
+    .course_details-syllabus-item{
+        width: 350px;
+    }
+    .course_details-bottom h3{
+        padding: 15px !important;
+        /* padding-right: 150px !important; */
+    }
+}
 .profile-container {
     position: relative;
     display: inline-block;
@@ -538,6 +701,24 @@
     .payment-button {
         font-size: 14px;
     }
+    .faqs{
+        padding: 0 !important;
+        margin: 0 !important;
+        min-width: 380px !important;
+    }
+    .question{
+        max-width: 380px !important;
+        padding: 20px 0px!important;
+        margin: 10px !important;
+    }
+    .question h3{
+        width: 350px !important;
+        height: 30px;
+    }
+    .question button{
+        width: 30px !important;
+        height: 30px;
+    }
 }
 .profile{
     display: flex;
@@ -602,4 +783,34 @@
     align-items: center;
     width: 500px;  /* Ensure each course has a fixed width */
     margin: 10px;  /* Adds spacing */
+}
+@media screen and (max-width:450px) {
+    .profile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .profile-button{
+        min-height: 350px !important;
+    }
+    .profile-component{
+        min-height: 400px;
+        min-width: 390px;
+        border-radius: 20px;
+    }
+    .userprofile{
+        padding: 0px  !important;
+        margin: 0 !important;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 350px;
+    }
+    .userprofile p{
+        padding: 10px;
+    }
+    .userprofile h1{
+        padding: 20px;
+    }
 }
