@@ -29,7 +29,7 @@ function Login({onClose}){
         const data=validation(emailvalue,passwordvalue);
         if(!emailerr){
             try{
-                const response=await axios.post("http://localhost:5000/user/signin",data,{
+                const response=await axios.post("/user/signin",data,{
                     headers:{
                         "Content-Type":"application/json",
                     },
