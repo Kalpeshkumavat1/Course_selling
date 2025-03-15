@@ -11,7 +11,7 @@ function MyCourses() {
     useEffect(() => {
         const fetching = async () => {
             try {
-                const response = await axios.get(`http://localhost:5000/user/purchases/${username}`, {
+                const response = await axios.get(`/user/purchases/${username}`, {
                     withCredentials: true
                 });
                 if (response.data) {
@@ -38,7 +38,7 @@ function MyCourses() {
                 if (courseId.length > 0) {
                     Promise.all(
                         courseId.map((course_Id) =>
-                            axios.get(`http://localhost:5000/course/preview/${course_Id}`, {
+                            axios.get(`/course/preview/${course_Id}`, {
                                 withCredentials: true
                             })
                                 .then((res) => res.data)
