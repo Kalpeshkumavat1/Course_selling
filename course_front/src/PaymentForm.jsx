@@ -16,10 +16,10 @@ function PaymentForm() {
     useEffect(() => {
         const fetching = async () => {
             try {
-                const response = await axios.get(`http://localhost:5000/course/preview/payment/${id}`);
+                const response = await axios.get(`/course/preview/payment/${id}`);
                 console.log(response)
                 if (response.data) {
-                    const data1 = await axios.post(`http://localhost:5000/course/preview/purchase`, response.data, { "Content-Type": "application/json" });
+                    const data1 = await axios.post(`/course/preview/purchase`, response.data, { "Content-Type": "application/json" });
                     if (data1.data.clientSecret) {
                         setClientsecreat(data1.data.clientSecret)
                     }
@@ -53,7 +53,7 @@ function PaymentForm() {
             if (result.paymentIntent.status === "succeeded") {
                 alert("successfully!");
                 const data={username:username,id:id};
-                const response=await axios.post("http://localhost:5000/course/purchase",data,
+                const response=await axios.post("/course/purchase",data,
                     { "Content-Type": "application/json" })
                 console.log("Payment successful!");
                 navigate(`/${username}`)
