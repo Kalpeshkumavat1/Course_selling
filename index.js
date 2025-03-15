@@ -37,8 +37,6 @@ app.use(cors({
   
 app.use('/user',userRouter);
 app.use('/course',courseRouter);
-app.use('/admin',adminRouter);
-app.use('/admin/course',adminCourse);
 app.use('/auth',authRouter);
 // app.use("/auth/google",googleauth)
 
