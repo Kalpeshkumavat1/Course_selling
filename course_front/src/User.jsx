@@ -10,7 +10,7 @@ import Main4 from "./Main4";
 function User(){
     const {username}=useParams();
     const {login,setLogin,setUsername}=useContext(loginContext);
-    const {data,loading,err}=useFetchPost(`http://localhost:5000/user/${username}`)
+    const {data,loading,err}=useFetchPost(`/user/${username}`)
     useEffect(() => {
         if (err) {
             setLogin(false);
