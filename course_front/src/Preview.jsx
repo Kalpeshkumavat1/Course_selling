@@ -3,7 +3,7 @@ import useFetch from "./hooks/useFetch"
 import Course_details from "./Course_details";
 import { Link } from "react-router-dom";
 function Preview(){
-    const {data = {},loading,err}=useFetch("http://localhost:5000/course/preview");
+    const {data = {},loading,err}=useFetch("/course/preview");
     console.log(data);
     return (
         <>
