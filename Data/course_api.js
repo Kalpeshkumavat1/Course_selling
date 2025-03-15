@@ -1,0 +1,570 @@
+function course_api() {
+  return {
+    "courses": [
+      {
+        "title": "The Complete Web Developer Zero to Mastery",
+        "imageUrl": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800",
+        "description": "Comprehensive course covering HTML5, CSS3, JavaScript, React, Node.js, and more. Perfect for beginners who want to become full-stack developers. Includes real-world projects and modern development practices.",
+        "duration": "40 hours",
+        "level": "Beginner to Advanced",
+        "price": 89.99,
+        "currency": "USD",
+        "topics": ["HTML", "CSS", "JavaScript", "React", "Node.js", "Database", "APIs"],
+        "syllabus": [
+          "Introduction to Web Development",
+          "HTML5 & Semantic Markup",
+          "CSS3 & Responsive Design",
+          "JavaScript Basics & ES6+ Features",
+          "Working with APIs & AJAX",
+          "React & Component-Based Development",
+          "Node.js & Express Basics",
+          "Databases & MongoDB",
+          "Authentication & Security",
+          "Final Project & Deployment"
+        ]
+      },
+      {
+        "title": "Advanced CSS and Sass: Flexbox, Grid, Animations",
+        "imageUrl": "https://images.unsplash.com/photo-1523437113738-bbd3cc89fb19?w=800",
+        "description": "Deep dive into modern CSS techniques including flexbox, CSS Grid, responsive design, and animations. Learn to build stunning, responsive websites with advanced CSS features and Sass preprocessing.",
+        "duration": "28 hours",
+        "level": "Intermediate",
+        "price": 89.99,
+        "currency": "USD",
+        "topics": ["CSS3", "Sass", "Flexbox", "CSS Grid", "Animations", "Responsive Design"],
+        "syllabus": [
+          "CSS Fundamentals & Best Practices",
+          "Flexbox: Layouts & Components",
+          "CSS Grid: Advanced Layout Techniques",
+          "Animations & Transitions in CSS",
+          "Sass: Variables, Mixins, and Nesting",
+          "Responsive Web Design Principles",
+          "Building a Real-World Project with CSS"
+        ]
+      },
+      {
+        "title": "Modern React with Redux",
+        "imageUrl": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800",
+        "description": "Master React 18 and Redux with hands-on projects. Covers hooks, context API, Redux Toolkit, and modern React patterns. Build scalable and maintainable front-end applications.",
+        "duration": "52 hours",
+        "level": "Intermediate to Advanced",
+        "price": 94.99,
+        "currency": "USD",
+        "topics": ["React", "Redux", "Hooks", "Context API", "Modern JavaScript"],
+        "syllabus": [
+          "Introduction to React & JSX",
+          "State & Props Management",
+          "Handling Events & Forms",
+          "React Hooks (useState, useEffect, etc.)",
+          "Context API & State Management",
+          "Redux & Redux Toolkit",
+          "Middleware & Async Actions",
+          "Building Large Scale Applications",
+          "Testing & Debugging in React",
+          "Project Deployment"
+        ]
+      },
+      {
+        "title": "The Complete Node.js Developer Course",
+        "imageUrl": "https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=800",
+        "description": "Build robust back-end applications with Node.js. Covers Express.js, MongoDB, authentication, real-time web sockets, and deployment. Includes multiple real-world projects.",
+        "duration": "35 hours",
+        "level": "Intermediate",
+        "price": 94.99,
+        "currency": "USD",
+        "topics": ["Node.js", "Express", "MongoDB", "REST APIs", "Authentication"],
+        "syllabus": [
+          "Introduction to Node.js",
+          "Working with Modules & NPM",
+          "Express.js & Middleware",
+          "Building RESTful APIs",
+          "Authentication & JWT",
+          "MongoDB & Mongoose",
+          "WebSockets & Real-Time Apps",
+          "Testing & Debugging in Node.js",
+          "Deployment & Production Best Practices"
+        ]
+      },
+      {
+        "title": "JavaScript: The Advanced Concepts",
+        "imageUrl": "https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?w=800",
+        "description": "Deep dive into advanced JavaScript concepts including prototypal inheritance, closures, async programming, and design patterns. Essential for serious JavaScript developers.",
+        "duration": "25 hours",
+        "level": "Advanced",
+        "price": 84.99,
+        "currency": "USD",
+        "topics": ["JavaScript", "OOP", "Functional Programming", "Async/Await", "Design Patterns"],
+        "syllabus": [
+          "JavaScript Execution Context & Scope",
+          "Closures & Lexical Scope",
+          "Prototypal Inheritance & Object-Oriented JavaScript",
+          "Functional Programming in JavaScript",
+          "Asynchronous JavaScript: Callbacks, Promises, Async/Await",
+          "Event Loop & Performance Optimization",
+          "JavaScript Design Patterns",
+          "Building a Scalable JavaScript Application"
+        ]
+      },
+      {
+        "title": "Full-Stack Web Development with MERN Stack",
+        "imageUrl": "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?w=800",
+        "description": "Build full-stack applications using MongoDB, Express, React, and Node.js. Covers entire development lifecycle from setup to deployment. Includes e-commerce project.",
+        "duration": "45 hours",
+        "level": "Intermediate to Advanced",
+        "price": 99.99,
+        "currency": "USD",
+        "topics": ["MongoDB", "Express", "React", "Node.js", "Full Stack Development"],
+        "syllabus": [
+          "Introduction to MERN Stack",
+          "Setting Up the Development Environment",
+          "Building REST APIs with Node.js and Express",
+          "Connecting MongoDB and CRUD Operations",
+          "Frontend Development with React",
+          "State Management in React (Redux, Context API)",
+          "User Authentication and Authorization (JWT, OAuth)",
+          "Integrating Frontend and Backend"
+        ]
+      },
+      {
+        "title": "TypeScript Complete Developer Guide",
+        "imageUrl": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=800",
+        "description": "Master TypeScript for building large-scale applications. Covers type system, interfaces, generics, and integration with React and Node.js. Essential for modern web development.",
+        "duration": "22 hours",
+        "level": "Intermediate",
+        "price": 84.99,
+        "currency": "USD",
+        "topics": ["TypeScript", "Static Typing", "Object-Oriented Programming", "Design Patterns"],
+        "syllabus": [
+          "Introduction to TypeScript",
+          "Understanding the Type System",
+          "Working with Interfaces and Generics",
+          "Advanced TypeScript Concepts",
+          "TypeScript with React and Node.js",
+          "TypeScript for Large-Scale Applications",
+          "Testing and Debugging TypeScript Code",
+          "TypeScript Best Practices"
+        ]
+      },
+      {
+        "title": "Web Security and Authentication Fundamentals",
+        "imageUrl": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=800",
+        "description": "Learn essential web security concepts and implementation. Covers HTTPS, JWT, OAuth, password hashing, and protection against common vulnerabilities like XSS and CSRF.",
+        "duration": "18 hours",
+        "level": "Intermediate to Advanced",
+        "price": 89.99,
+        "currency": "USD",
+        "topics": ["Security", "Authentication", "Authorization", "Encryption", "Best Practices"],
+        "syllabus": [
+          "Web Security Fundamentals",
+          "Understanding HTTP/HTTPS Protocols",
+          "Authentication Systems and JWT",
+          "OAuth and OpenID Connect",
+          "Password Hashing and Security",
+          "Common Security Vulnerabilities",
+          "Cross-Site Scripting Prevention",
+          "Security Best Practices",
+          "Implementation of Security Measures",
+          "Security Testing and Auditing"
+        ]
+      },
+      {
+        "title": "Progressive Web Apps (PWA) - The Complete Guide",
+        "imageUrl": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800",
+        "description": "Build modern Progressive Web Apps that work offline and feel like native apps. Covers service workers, push notifications, app manifests, and performance optimization.",
+        "duration": "20 hours",
+        "level": "Intermediate",
+        "price": 99.99,
+        "currency": "USD",
+        "topics": ["PWA", "Service Workers", "Push Notifications", "Offline Functionality"],
+        "syllabus": [
+          "Introduction to Progressive Web Apps",
+          "Web App Manifest Implementation",
+          "Service Workers Fundamentals",
+          "Caching Strategies",
+          "Offline Functionality",
+          "Push Notifications",
+          "Background Sync",
+          "App Shell Architecture",
+          "Performance Optimization",
+          "PWA Deployment and Testing"
+        ]
+      },
+      {
+        "title": "Docker and Kubernetes: The Complete Guide",
+        "imageUrl": "https://images.unsplash.com/photo-1605745341112-85968b19335b?w=800",
+        "description": "Master containerization and orchestration for modern web applications. Learn to deploy and scale applications using Docker and Kubernetes. Essential for DevOps and deployment.",
+        "duration": "32 hours",
+        "level": "Intermediate to Advanced",
+        "price": 89.99,
+        "currency": "USD",
+        "topics": ["Docker", "Kubernetes", "DevOps", "Containerization", "Cloud Deployment"],
+        "syllabus": [
+          "Docker Fundamentals and Architecture",
+          "Working with Containers and Images",
+          "Docker Compose and Networking",
+          "Kubernetes Architecture",
+          "Pods and Deployments",
+          "Services and Ingress",
+          "Storage and Persistence",
+          "Scaling and Load Balancing",
+          "Monitoring and Logging",
+          "Production Deployment Strategies"
+        ]
+      },
+      {
+        "title": "Mastering Frontend Development with Vue.js",
+        "imageUrl": "https://images.unsplash.com/photo-1552581234-26160f608093?w=800",
+        "description": "Learn Vue.js from scratch and build interactive, dynamic web applications. Covers Vue Router, Vuex, Composition API, and real-world projects.",
+        "duration": "30 hours",
+        "level": "Intermediate",
+        "price": 99.99,
+        "currency": "USD",
+        "topics": ["Vue.js", "Vue Router", "Vuex", "Component Architecture", "Modern JavaScript"],
+        "syllabus": [
+          "Vue.js Fundamentals and Setup",
+          "Component Architecture and Props",
+          "State Management with Vuex",
+          "Routing with Vue Router",
+          "Composition API Deep Dive",
+          "Forms and User Input Handling",
+          "API Integration and Authentication",
+          "Testing Vue Applications",
+          "Performance Optimization",
+          "Building Production-Ready Apps"
+        ]
+      },
+      {
+        "title": "React Native - Build Mobile Apps with JavaScript",
+        "imageUrl": "https://images.unsplash.com/photo-1547082299-de196ea013d6?w=600",
+        "description": "Learn React Native and build cross-platform mobile applications with JavaScript. Covers animations, state management, navigation, and API integration.",
+        "duration": "40 hours",
+        "level": "Intermediate to Advanced",
+        "price": 89.99,
+        "currency": "USD",
+        "topics": ["React Native", "Mobile Development", "State Management", "Animations", "APIs"],
+        "syllabus": [
+          "React Native Fundamentals",
+          "Native Components and APIs",
+          "Navigation and Routing",
+          "State Management Solutions",
+          "Building Custom Components",
+          "Animations and Gestures",
+          "Data Storage and Persistence",
+          "Push Notifications",
+          "App Deployment and Publishing",
+          "Performance Optimization"
+        ]
+      },
+      {
+        "title": "GraphQL with React and Node.js",
+        "imageUrl": "https://images.unsplash.com/photo-1495214783159-3503fd1b572d?w=800",
+        "description": "Master GraphQL for building efficient APIs. Learn to use GraphQL with React and Node.js, covering queries, mutations, subscriptions, and authentication.",
+        "duration": "35 hours",
+        "level": "Intermediate",
+        "price": 84.99,
+        "currency": "USD",
+        "topics": ["GraphQL", "React", "Node.js", "APIs", "Authentication"],
+        "syllabus": [
+          "GraphQL Fundamentals",
+          "Schema Design and Types",
+          "Queries and Resolvers",
+          "Mutations and Input Types",
+          "Real-time Updates with Subscriptions",
+          "Authentication and Authorization",
+          "Error Handling and Validation",
+          "Performance and Caching",
+          "Testing GraphQL APIs",
+          "Deployment and Monitoring"
+        ]
+      },
+      {
+        "title": "Next.js: The Complete Developer's Guide",
+        "imageUrl": "https://images.unsplash.com/photo-1709547228697-fa1f424a3f39?w=600",
+        "description": "Learn Next.js to build fast, server-side rendered and static sites. Covers API routes, authentication, and performance optimization.",
+        "duration": "28 hours",
+        "level": "Intermediate to Advanced",
+        "price": 89.99,
+        "currency": "USD",
+        "topics": ["Next.js", "Server-side Rendering", "Static Site Generation", "APIs", "Performance"],
+        "syllabus": [
+          "Next.js Project Setup",
+          "Routing and Navigation",
+          "Server-side Rendering (SSR)",
+          "Static Site Generation (SSG)",
+          "API Routes Development",
+          "Authentication Implementation",
+          "Data Fetching Strategies",
+          "Styling and CSS Solutions",
+          "SEO and Performance",
+          "Deployment and Optimization"
+        ]
+      },
+      {
+        "title": "Python Django - Full Stack Web Development",
+        "imageUrl": "https://images.unsplash.com/photo-1510070009289-b5bc34383727?w=800",
+        "description": "Learn Django framework to build powerful, scalable web applications. Covers authentication, ORM, REST APIs, and deployment.",
+        "duration": "45 hours",
+        "level": "Intermediate",
+        "price": 89.99,
+        "currency": "USD",
+        "topics": ["Django", "Python", "ORM", "REST APIs", "Authentication"],
+        "syllabus": [
+          "Django Project Structure",
+          "Models and Database Design",
+          "Views and URL Patterns",
+          "Templates and Forms",
+          "Authentication and Authorization",
+          "Django REST Framework",
+          "Database Queries and ORM",
+          "Testing Django Applications",
+          "Security Best Practices",
+          "Deployment and Scaling"
+        ]
+      },
+
+      {
+        "title": "Flask Web Development - From Beginner to Pro",
+        "imageUrl": "https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?w=800",
+        "description": "Master Flask framework and build dynamic web applications. Covers REST APIs, authentication, database integration, and deployment.",
+        "duration": "30 hours",
+        "level": "Intermediate",
+        "price": 99.99,
+        "currency": "USD",
+        "topics": ["Flask", "Python", "REST APIs", "Authentication", "Database"],
+        "syllabus": [
+          "Introduction to Flask Framework",
+          "Routing and View Functions",
+          "Templates and Forms",
+          "Database Integration with SQLAlchemy",
+          "User Authentication and Authorization",
+          "RESTful API Development",
+          "Error Handling and Logging",
+          "Testing Flask Applications",
+          "Performance Optimization",
+          "Deployment and Production Setup"
+        ]
+      },
+      {
+        "title": "Mastering Tailwind CSS - Rapid UI Development",
+        "imageUrl": "https://images.unsplash.com/photo-1468436139062-f60a71c5c892?w=600",
+        "description": "Learn Tailwind CSS to create modern, responsive designs without writing custom CSS. Covers utility-first CSS, component-based design, and dark mode.",
+        "duration": "18 hours",
+        "level": "Beginner to Intermediate",
+        "price": 81.99,
+        "currency": "USD",
+        "topics": ["Tailwind CSS", "UI Design", "Responsive Design", "Utility Classes"],
+        "syllabus": [
+          "Tailwind CSS Fundamentals",
+          "Utility-First Workflow",
+          "Responsive Design Principles",
+          "Component-Based Architecture",
+          "Custom Configuration",
+          "Dark Mode Implementation",
+          "Animation and Transitions",
+          "Performance Optimization",
+          "Build Process and Production",
+          "Best Practices and Tips"
+        ]
+      },
+      {
+        "title": "Rust for Web Development",
+        "imageUrl": "https://plus.unsplash.com/premium_photo-1669648896400-d3a6161906d6?w=600",
+        "description": "Learn Rust for building safe and fast web applications. Covers Actix Web, async programming, and database integration.",
+        "duration": "40 hours",
+        "level": "Advanced",
+        "price": 86.99,
+        "currency": "USD",
+        "topics": ["Rust", "WebAssembly", "Actix Web", "Async Programming"],
+        "syllabus": [
+          "Rust Language Fundamentals",
+          "Memory Safety and Ownership",
+          "Async Programming in Rust",
+          "Actix Web Framework",
+          "Database Integration",
+          "WebAssembly Development",
+          "Error Handling",
+          "Testing and Debugging",
+          "Performance Optimization",
+          "Deployment Strategies"
+        ]
+      },
+      {
+        "title": "PHP & Laravel - Build Scalable Web Apps",
+        "imageUrl": "https://images.unsplash.com/photo-1562813733-b31f71025d54?w=800",
+        "description": "Master Laravel and PHP to build scalable applications. Covers MVC architecture, authentication, database management, and REST APIs.",
+        "duration": "42 hours",
+        "level": "Intermediate",
+        "price": 109.99,
+        "currency": "USD",
+        "topics": ["PHP", "Laravel", "REST APIs", "MVC", "Authentication"],
+        "syllabus": [
+          "Laravel Framework Basics",
+          "MVC Architecture",
+          "Eloquent ORM",
+          "Authentication and Authorization",
+          "API Development with Laravel",
+          "Database Management",
+          "Testing Laravel Applications",
+          "Caching and Queue Systems",
+          "Security Best Practices",
+          "Deployment and Scaling"
+        ]
+      },
+      {
+        "title": "Golang Web Development - Build APIs & Microservices",
+        "imageUrl": "https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?w=800",
+        "description": "Learn Go for building web applications and high-performance APIs. Covers Gin framework, JWT authentication, and database integration.",
+        "duration": "38 hours",
+        "level": "Intermediate to Advanced",
+        "price": 89.99,
+        "currency": "USD",
+        "topics": ["Go", "Gin", "REST APIs", "Microservices", "Authentication"],
+        "syllabus": [
+          "Go Language Fundamentals",
+          "Web Development with Gin",
+          "RESTful API Design",
+          "Microservices Architecture",
+          "Database Integration",
+          "JWT Authentication",
+          "Error Handling",
+          "Testing in Go",
+          "Performance Optimization",
+          "Docker and Deployment"
+        ]
+      },
+      {
+        "title": "Cybersecurity Essentials for Web Developers",
+        "imageUrl": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800",
+        "description": "Learn how to secure web applications against vulnerabilities like SQL injection, XSS, CSRF, and more.",
+        "duration": "20 hours",
+        "level": "Intermediate",
+        "price": 99.99,
+        "currency": "USD",
+        "topics": ["Security", "SQL Injection", "XSS", "CSRF", "Encryption"],
+        "syllabus": [
+          "Web Security Fundamentals",
+          "Common Attack Vectors",
+          "SQL Injection Prevention",
+          "Cross-Site Scripting (XSS)",
+          "CSRF Protection",
+          "Authentication Security",
+          "Encryption Implementation",
+          "Security Headers",
+          "Security Testing",
+          "Incident Response"
+        ]
+      },
+      {
+        "title": "Blockchain Development with Solidity",
+        "imageUrl": "https://plus.unsplash.com/premium_photo-1681400678259-255b10890b08?w=600",
+        "description": "Learn Solidity and smart contract development on Ethereum. Covers DApps, token creation, and decentralized finance (DeFi).",
+        "duration": "50 hours",
+        "level": "Advanced",
+        "price": 86.99,
+        "currency": "USD",
+        "topics": ["Blockchain", "Ethereum", "Solidity", "Smart Contracts", "DeFi"],
+        "syllabus": [
+          "Blockchain Fundamentals",
+          "Solidity Programming",
+          "Smart Contract Development",
+          "DApp Architecture",
+          "Token Standards (ERC20, ERC721)",
+          "DeFi Protocols",
+          "Testing Smart Contracts",
+          "Security Best Practices",
+          "Gas Optimization",
+          "Deployment and Monitoring"
+        ]
+      },
+      {
+        "title": "Swift for iOS Development",
+        "imageUrl": "https://plus.unsplash.com/premium_photo-1675793715030-0584c8ec4a13?w=600",
+        "description": "Learn Swift programming and build iOS applications using SwiftUI and UIKit.",
+        "duration": "36 hours",
+        "level": "Intermediate",
+        "price": 89.99,
+        "currency": "USD",
+        "topics": ["Swift", "iOS", "SwiftUI", "Xcode", "Mobile Development"],
+        "syllabus": [
+          "Swift Programming Basics",
+          "iOS App Architecture",
+          "UIKit Fundamentals",
+          "SwiftUI Development",
+          "Data Persistence",
+          "Networking and APIs",
+          "User Interface Design",
+          "App Store Guidelines",
+          "Testing and Debugging",
+          "App Publication Process"
+        ]
+      },
+      {
+        "title": "Java Full Stack Development",
+        "imageUrl": "https://images.unsplash.com/photo-1503437313881-503a91226402?w=800",
+        "description": "Master Java for full-stack development using Spring Boot, Hibernate, and React.",
+        "duration": "45 hours",
+        "level": "Intermediate to Advanced",
+        "price": 99.99,
+        "currency": "USD",
+        "topics": ["Java", "Spring Boot", "Hibernate", "React", "Full Stack Development"],
+        "syllabus": [
+          "Spring Boot Fundamentals",
+          "REST API Development",
+          "Hibernate ORM",
+          "React Integration",
+          "Security Implementation",
+          "Database Management",
+          "Testing Strategies",
+          "Microservices Architecture",
+          "DevOps Integration",
+          "Production Deployment"
+        ]
+      },
+      {
+        "title": "Kubernetes for DevOps Engineers",
+        "imageUrl": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800",
+        "description": "Learn Kubernetes for deploying, managing, and scaling applications in the cloud.",
+        "duration": "30 hours",
+        "level": "Advanced",
+        "price": 129.99,
+        "currency": "USD",
+        "topics": ["Kubernetes", "DevOps", "Containerization", "Cloud Deployment"],
+        "syllabus": [
+          "Kubernetes Architecture",
+          "Container Orchestration",
+          "Pod Management",
+          "Service Configuration",
+          "Storage and Volumes",
+          "Network Policies",
+          "Security Contexts",
+          "Monitoring and Logging",
+          "Auto Scaling",
+          "Disaster Recovery"
+        ]
+      },
+      {
+        "title": "Web Performance Optimization",
+        "imageUrl": "https://images.unsplash.com/photo-1499673610122-01c7122c5dcb?w=800",
+        "description": "Learn techniques to improve website performance, including lazy loading, caching, and server-side rendering.",
+        "duration": "25 hours",
+        "level": "Intermediate",
+        "price": 89.99,
+        "currency": "USD",
+        "topics": ["Performance", "Lazy Loading", "Caching", "Optimization"],
+        "syllabus": [
+          "Performance Metrics",
+          "Critical Rendering Path",
+          "Image Optimization",
+          "Lazy Loading Implementation",
+          "Caching Strategies",
+          "Server-Side Rendering",
+          "Code Splitting",
+          "Bundle Optimization",
+          "Performance Monitoring",
+          "Mobile Performance"
+        ]
+      }
+    ]
+  }
+}
+module.exports = course_api;
