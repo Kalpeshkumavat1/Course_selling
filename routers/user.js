@@ -87,15 +87,15 @@ userRouter.post("/signin",validation_signin,async function(req,res){
             return res.status(404).json({messge:"Some Error for occuring token!"})
         }
         const firstName=await userData.firstName;
-        res.cookie("token",token,{
-            httpOnly:true,
-            secure:false,
-            sameSite:"lax",
-            domain: "localhost",
-            path:'/',
-            maxAge:3600000
+        // Updated cookie configuration that works in both dev and production
+        res.cookie("token", token, {
+            httpOnly: true,
+            secure: process.env.NODE_ENV === 'production', // true in production, false in development
+            sameSite: "lax",
+            // Remove the domain property entirely - it will default to the current domain
+            path: '/',
+            maxAge: 3600000
         })
-
         return res.status(201).json({
             firstname:firstName,
             message:"you are signin!"
