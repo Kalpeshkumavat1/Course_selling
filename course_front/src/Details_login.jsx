@@ -3,7 +3,7 @@ import useFetch from "./hooks/useFetch";
 import { Link } from "react-router-dom";
 function Details_login(){
     const {id}=useParams();
-    const {data,loading,err}=useFetch(`http://localhost:5000/course/preview/${id}`)
+    const {data,loading,err}=useFetch(`/course/preview/${id}`)
     return (
         <>
         {
