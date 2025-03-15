@@ -6,7 +6,7 @@ import { useEffect } from "react";
 function LogOut(){
     const {login,setLogin}=useContext(loginContext);
     const navigate=useNavigate();
-    const {data,loading,err}=useFetchPost("http://localhost:5000/user/logout");
+    const {data,loading,err}=useFetchPost("/user/logout");
     useEffect(() => {
         if (err) {
             setLogin(true);
