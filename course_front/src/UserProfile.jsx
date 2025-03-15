@@ -3,7 +3,7 @@ import useFetch from "./hooks/useFetch";
 
 function UserProfile(){
     const {username}=useParams();
-    const {data,loading,err}=useFetch(`http://localhost:5000/user/profile/${username}`);
+    const {data,loading,err}=useFetch(`/user/profile/${username}`);
     if (loading) return <div>Loading...</div>;
     if (err) return <div>Error: {err}</div>;
     if (!data) return <div>User not found. Please sign up!</div>;
