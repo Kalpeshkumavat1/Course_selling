@@ -2,9 +2,6 @@ const express=require('express')
 const app=express();
 const userRouter=require('./routers/user')
 const courseRouter=require('./routers/course')
-const adminRouter=require('./routers/admin')
-const adminCourse=require('./routers/admincourse')
-const googleauth=require('./routers/googleauth')
 const cors=require('cors');
 const MongoStore = require("connect-mongo");
 require("dotenv").config({path:"dot.env"});
