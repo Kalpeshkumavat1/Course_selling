@@ -27,7 +27,7 @@ function Details_login(){
                     <h3 style={{padding:"30px 128px"}}>Topics:</h3>
                     <div className="course_details-topics">
                         {data.topics.map((topic,index)=>(
-                            <div key={index} style={{backgroundColor:"#898888",padding:"12.5px",borderRadius:"20px"}}>{topic}</div>
+                            <div key={index} style={{backgroundColor:"#898888",padding:"12.5px",borderRadius:"20px"}} className="course_details-topics-item">{topic}</div>
                         ))}
                     </div>
                     <h3 style={{padding:"30px 128px"}}>Syllabus:</h3>
